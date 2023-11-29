@@ -1,1 +1,1 @@
-# FlickPickBot
+![](./images/film-picker-avatar.png)
