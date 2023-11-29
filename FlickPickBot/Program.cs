@@ -1,9 +1,17 @@
-﻿namespace FlickPickBot;
+﻿using FlickPickBot.BotHandlers;
 
-public static class Program
+namespace FlickPickBot
 {
-    public static void Main(string[] args)
+    public static class Program
     {
-        Console.WriteLine("Hello, I'm a Flick Pick Bot!");
+        public static void Main()
+        {
+            var creator = new BotCreator();
+            creator.CreateBot();
+
+            var botHandlerDebug = new BotHandlerDebug(creator);
+            
+            Console.ReadLine();
+        }
     }
 }
